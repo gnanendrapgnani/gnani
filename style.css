@@ -57,7 +57,8 @@ body{
 }
 .left-flex{
     height: 500px;
-    width: 18%;
+    max-width: 18%;
+    width: calc(100% -50px);
     min-width: 160px;
     background-color: #1c1b23;
     border-radius: 10px;
@@ -66,11 +67,9 @@ body{
 
 }
 .right-flex{
-    height: 300vh;
-    width: 77%;
-    min-width: 73%;
-    margin-left: 300px;
-    margin-left: auto;
+
+    width: calc(100% -150px);
+    margin-left: 220px;
     margin-top: 15px;
 }
 .profile{
@@ -79,9 +78,8 @@ body{
     backdrop-filter: blur(150rem);
     background-position: center;
     height: 122px;
-    width: auto;
-    max-width: 975px;
-    min-width: 450px;
+    width: calc(100% -100px);
+
     display: flex;
     gap: 20px;
     align-items: center;
@@ -141,7 +139,7 @@ body{
     padding-top: 30px;
 }
 .about{
-    width: 95%;
+    width: 97%;
     color: white;
     margin-top: 20px;
 
@@ -202,6 +200,7 @@ body{
     margin-right: 5px;
 }
 .expr{
+    width: 97%;
     padding: 20px 0px 20px 0px;
 }
 #conp-hed,h2,p{
@@ -301,9 +300,11 @@ footer{
 .hidden{
     opacity: 0;
     transition: all 2s ease;
+    margin-right: 20px;
 }
 .show{
     opacity: 1;
+    margin-right: 20px;
 }
 
 /* Default styles for all devices */
@@ -314,7 +315,7 @@ footer{
   }
   
   /* Large Desktop */
-  @media (min-width:760) and (max-width: 1024) {
+  @media screen and  (min-width:760) and (max-width: 1024) {
     /* Large desktop-specific styles */
         .profile{
             width: auto;
@@ -325,7 +326,7 @@ footer{
   }
   
   /* Mobile */
-  @media (min-width: 450px) and (max-width: 767px)  {
+  @media all and (max-width: 760px) {
     *{
         margin: 0;
         padding: 0;
