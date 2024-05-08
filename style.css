@@ -57,14 +57,13 @@ body{
 }
 .left-flex{
     height: 500px;
-    max-width: 18%;
+    max-width: 24%;
     width: calc(100% -50px);
-    min-width: 160px;
+    min-width: 180px;
     background-color: #1c1b23;
     border-radius: 10px;
     margin: 20px 10px 10px 10px;
     position: fixed;
-
 }
 .right-flex{
 
@@ -77,15 +76,13 @@ body{
     background-size: cover;
     backdrop-filter: blur(150rem);
     background-position: center;
-    height: 122px;
+    height: 114px;
     width: calc(100% -100px);
-
     display: flex;
     gap: 20px;
     align-items: center;
     margin-top: 10px;
     margin-right: 40px;
-    
 }
 .pro-img{
     height: 100px;
@@ -112,13 +109,13 @@ body{
     margin-bottom: 0;
 }
 .opt-lk>a{
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     text-decoration: none;
     color: #677586;
     transition:  all 0.3s ease;
 }
 .opt-lk>a>i{
-    gap: 08px;
+    font-size: 1.3rem;
 }
 
 .Socl{
@@ -199,9 +196,9 @@ body{
 .download-button i {
     margin-right: 5px;
 }
-.expr{
+.expr {
     width: 97%;
-    padding: 20px 0px 20px 0px;
+    padding: 0 0px 20px 0px;
 }
 #conp-hed,h2,p{
     font-family: "Inter", sans-serif;
@@ -221,12 +218,11 @@ body{
 }
 .sklls-card{
     background-color: #1c1b23;
-    height: 400px;
+    height: 360px;
     width: 200px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    
     align-items: center;
 }
 .skillhed{  
@@ -237,7 +233,7 @@ body{
 /* for all heading */
 .heading{
     font-family: "Inter", sans-serif;
-    margin: 20px 0px 0px 0px;
+    margin: 20px 0px 20px 0px;
 }
 .skill-info{
     color: #677586;
@@ -273,14 +269,13 @@ body{
 
 
 footer{
-    height: 60px;
+    height: 70px;
     width: auto;
     min-width: 450px;
     display: grid;
     place-items: center;
     text-align: center;
     background-color: #1c1b23;
-    
 }
 .navBar{
     display: none;
@@ -288,6 +283,7 @@ footer{
 .cop-rigt{
     font-size: 1rem;
     font-family: "Inter", sans-serif;
+    margin: 0;
 }
 .opt-lk>a:hover{
     font-size: 1.3rem;
@@ -310,27 +306,55 @@ footer{
 /* Default styles for all devices */
 
   /* Laptop/Desktop */
-  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+  @media all and (min-width: 1024px) and (max-width: 1439px) {
     /* Laptop/Desktop-specific styles */
-  }
-  
-  /* Large Desktop */
-  @media screen and  (min-width:760) and (max-width: 1024) {
-    /* Large desktop-specific styles */
-        .profile{
-            width: auto;
-    } 
-    .left-flex>.nav-cont>ul.nav-bar  {
-        padding-left: 20px;
+    .skills {
+        height: 71vh;
+        width: 100%;
     }
   }
   
+  /* Large Desktop */
+  @media all and  (min-width:760px) and (max-width: 1024px) {
+    /* Large desktop-specific styles */
+    .skills {
+        height: 60vh;
+        width: 100%;
+    }    
+    .left-flex{
+        width: 20%;
+        margin: 27px 10px 10px 12px;
+    
+    } 
+    .opt-lk>a>i {
+        font-size: 1.5rem;
+    }
+    .opt-lk>a {
+        font-size: 1.3rem;
+    }
+    .Socl {
+        font-size: 1.8rem;
+        margin: 20px 0 20px 5px;
+    }
+    .profile{
+
+            width: auto;
+    } 
+    .left-flex>.nav-cont>ul.nav-bar  {
+        padding-left: 36px;
+    }
+
+  }
   /* Mobile */
   @media all and (max-width: 760px) {
     *{
         margin: 0;
         padding: 0;
     }
+
+.profile {
+    margin-left: 20px;
+}
     .header{
         height: 60px;
     }
@@ -338,10 +362,13 @@ footer{
         display: none;
         width: auto;
     }
+    .sklls-card {
+    height: 328px;
+    }
     .right-flex{
         width: auto;
         margin-left: 0;
-        padding-left: 20px;
+        padding-left: 0;
     }
     /* .profile{
         background: url(./images/Bg.jpeg) no-repeat;
@@ -359,8 +386,9 @@ footer{
     }
     .cop-rigt {
         min-width: 400px;
-        font-size: 15px;
+        font-size: 1.2rem;
         margin-top: 20px;
+        padding: 0 20px;
     }
     button.con-btn {
         display: none;
@@ -373,6 +401,12 @@ footer{
         justify-content: center;
         align-items: center;
     }
+
+    .skills {
+        height: 71vh;
+        width: 100%;
+    }
+
     .icon{
         display: inline-block;
         color: white;
@@ -414,9 +448,13 @@ footer{
     }
     .opt-lk{
         list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     footer{
-        height: 140px;      
+        height: 200px;
+        width: 100%;
     }
     .navContanier{
         display: none;
@@ -475,6 +513,9 @@ footer{
     .bx{
         font-size: xx-large;
     }
+    .pa{
+        padding-left: 20px;
+    }
 
 }
 
@@ -486,4 +527,4 @@ footer{
     position: fixed;
     z-index: 3;
 }
-  
+    
