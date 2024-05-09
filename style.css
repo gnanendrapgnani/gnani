@@ -67,9 +67,11 @@ body{
 }
 .right-flex{
 
-    width: 100%;
-    margin-left: 220px;
-    margin-top: 15px;
+width: calc(100% - 150px);
+
+margin-left: 220px;
+
+margin-top: 15px;
 }
 .profile{
     background: url(./images/bg4.jpeg) no-repeat;
@@ -77,12 +79,12 @@ body{
     backdrop-filter: blur(150rem);
     background-position: center;
     height: 114px;
-    width: calc(100% -100px);
+    width: calc(100% - 40PX);
     display: flex;
     gap: 20px;
     align-items: center;
     margin-top: 10px;
-    margin-right: 40px;
+    margin-right: 30px;
 }
 .pro-img{
     height: 100px;
