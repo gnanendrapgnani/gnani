@@ -213,7 +213,7 @@ body{
     color: white;
 }
 .skills{
-    height: 80vh;
+    height: auto;
     width: 100%;
 }
 .sklls-card{
@@ -309,7 +309,7 @@ footer{
   @media all and (min-width: 1024px) and (max-width: 1439px) {
     /* Laptop/Desktop-specific styles */
     .skills {
-        height: 71vh;
+        height: auto;
         width: 100%;
     }
   }
@@ -318,7 +318,7 @@ footer{
   @media all and  (min-width:760px) and (max-width: 1024px) {
     /* Large desktop-specific styles */
     .skills {
-        height: 60vh;
+        height: auto;
         width: 100%;
     }    
     .left-flex{
@@ -403,7 +403,7 @@ footer{
     }
 
     .skills {
-        height: 71vh;
+        height: auto;
         width: 100%;
     }
 
@@ -432,7 +432,6 @@ footer{
 
     /* footer icon */
     .navBar{
-        display: flex;
         display: flex;
         margin-bottom: 10px;
         height: 45px;   
