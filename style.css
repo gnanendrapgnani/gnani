@@ -109,13 +109,13 @@ body{
     margin-bottom: 0;
 }
 .opt-lk>a{
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     text-decoration: none;
     color: #677586;
     transition:  all 0.3s ease;
 }
 .opt-lk>a>i{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 .Socl{
@@ -127,7 +127,7 @@ body{
 .nav-bar{
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 26px;
     padding-left: 40px;
     text-decoration: none;
     list-style: none;
@@ -327,14 +327,14 @@ footer{
     
     } 
     .opt-lk>a>i {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     .opt-lk>a {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
     .Socl {
         font-size: 1.8rem;
-        margin: 20px 0 20px 5px;
+        margin: 20px 0 20px 15px;
     }
     .profile{
 
