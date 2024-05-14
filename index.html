@@ -45,10 +45,11 @@
             
                 <nav class="nav-cont">
                     <ul class="nav-bar">
-                        <li class="opt-lk"><a href="#"><i class="fas fa-home"></i> Home</a></li>
-                        <li class="opt-lk"><a href="#"><i class="fas fa-user"></i> About Me</a></li>
-                        <li class="opt-lk"><a href="#"><i class="fas fa-download"></i> Resume</a></li>
-                        <li class="opt-lk"><a href="#"><i class="fas fa-folder"></i> Project</a></li>    
+                        <li class="opt-lk"><a href="#adout"><i class="fas fa-home"></i> Home</a></li>
+                        <li class="opt-lk"><a href=".skills"><i class="fas fa-user"></i> About Me</a></li>
+                        <li class="opt-lk"><a href=".down"><i class="fas fa-download"></i> Resume</a></li>
+                        <li class="opt-lk"><a href=".cards"><i class="fas fa-folder"></i> Project</a></li> 
+                        <li class="opt-lk"><a href=".contactContainer"><i class="fas fa-user"></i> Contact Me</a></li>   
                     </ul> 
                     <h2 class="Socl">Social</h2>
                     <ul class="nav-bar">
@@ -65,7 +66,7 @@
                     <img src="./images/gnani.JPG" class="pro-img" alt="">
                     <p><span class="name">Gnanendra P</span><br><span class="role">Frontend Developer</span></p>
                 </div>
-                <div class="about hidden pa">
+                <div class="about hidden pa" id="adout">
                     <h2 class="heading">About Me</h2>
                     <p class="ab-con">Motivated and detail-oriented front-end web developer with a 
                         passion for creating engaging and user-friendly web experiences.
@@ -98,22 +99,56 @@
                     <div class="skill-info" id="colo2">Bootstrap</div>
                 </div>
             </div>
+
+        <!-- prjects  start   -->
             <div class="cards hidden pa">
                 <h2 class="heading">Projects</h2> 
-                <div class="card" style="width: 16rem;">
-                    <svg class="bd-placeholder-img card-img-top" width="100%" height="160" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the </p>
-                      <a href="#" class="btn btn-primary">Preview</a>
+
+                <!-- prjects  card start   -->
+                
+                <div class="cardCont">
+                    <div class="card" style="min-width: 16rem; max-width: 16rem;">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="160" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+                        <div class="card-body">
+                          <h5 class="card-title">Weather Application</h5>
+                          <p class="card-text">These shows the live Weather of the loction you have entered </p>
+                          <a href="https://gnanendrapgnani.github.io/Weather/" class="btn btn-primary">Preview</a>
+                        </div>
+                    </div>
+    
+                    <div class="card" style="min-width: 16rem; max-width: 16rem;">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="160" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+                        <div class="card-body">
+                          <h5 class="card-title">TIC-TAC-TEO</h5>
+                          <p class="card-text">These is a mini game build using the HTML, CSS and JavaScript</p>
+                          <a href="https://gnanendrapgnani.github.io/TIC-TAC-TEO/" class="btn btn-primary">Preview</a>
+                        </div>
                     </div>
                 </div>
+
+                <!-- project cards end -->
             </div>
+
+
+            <!-- projects ends -->
             <div class="down hidden pa">
                 <h2 class="heading">Resume</h2>
                 <div class="download">
                     <h3 class="click">Click Download Option To Download Resume</h3>
                     <a href="your_file.pdf" download="filename.pdf" class="download-button">Download <i class="fas fa-download"></i></a>
+                </div>
+            </div>
+            <div class="contactContainer">
+                <div class="contact-me hidden">
+                    <h1>Contact Me</h1>
+                    <p>Thank you for your interest in contacting me. Please fill out the form below, and I'll get back to you as soon as possible.</p>
+                    <form action="https://api.web3forms.com/submit" onsubmit="reset()" method="POST" id="contact-form">
+                        <input type="hidden" name="access_key" value="63c5869e-0908-486b-8968-734e0f074598">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                        <button id="submit-button" type="submit">Send Message</button>
+                    </form>
                 </div>
             </div>
             <footer class="hidden">
@@ -128,5 +163,7 @@
             </footer>
         </div>
     </div>
+
 </body>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </html>

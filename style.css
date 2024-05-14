@@ -15,7 +15,7 @@ body{
     justify-content: space-between;
     position: fixed;
     padding-left: 30px;
-    padding-top: 10px;
+    padding-top: 0;
     z-index: 2;
     top: 0;
     bottom: 0;
@@ -79,7 +79,7 @@ margin-top: 15px;
     backdrop-filter: blur(150rem);
     background-position: center;
     height: 114px;
-    width: calc(100% - 40PX);
+    width: calc(100% - 25PX);
     display: flex;
     gap: 20px;
     align-items: center;
@@ -259,6 +259,7 @@ margin-top: 15px;
 }
 .card-body{
     background-color: #1c1b23;
+    border-radius: 0 0 10px 10px;
 }
 .card{
     border-radius: 10px;
@@ -305,19 +306,146 @@ footer{
     margin-right: 20px;
 }
 
+
+#preloader{
+    background:  #2a2826 url(./images/loder.gif) no-repeat center center;
+    background-size: 20%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+}
+
+.contact-me {
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #2a2930;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: block;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* align-content: center; */
+}
+.contactContainer{
+    width: 100%;
+    /* height: auto; */
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    text-align: center;
+    color: white;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 150px;
+}
+
+#submit-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submit-button:hover {
+    background-color: #0056b3;
+}
+
+
+#success-message {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+.cardCont {
+    width: 100%;
+    height: 100%;
+}
+
+.cardCont {
+
+    font-size: 18px;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 10px;
+    background: #2a2930;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.cardCont {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* code for toggle button which used for the dark and light mode */
+
+
+
 /* Default styles for all devices */
 
   /* Laptop/Desktop */
+  @media all and (min-width: 1024px) and (max-width: 1439px) {
+
+  }
+
   @media all and (min-width: 1024px) and (max-width: 1439px) {
     /* Laptop/Desktop-specific styles */
     .skills {
         height: auto;
         width: 100%;
     }
+
+    .download{
+        height: 50vh;
+    }
+    .right-flex {
+        width: calc(100% - 150px);
+        margin-left: 220px;
+        margin-top: 15px;
+    }
+  }
+
+  @media all and  (min-width:920px) and (max-width: 1024px) {
+    .right-flex {
+        width: calc(100% - 145px);
+        margin-left: 220px;
+        margin-top: 15px;
+    }
   }
   
   /* Large Desktop */
-  @media all and  (min-width:760px) and (max-width: 1024px) {
+  @media all and  (min-width:760px) and (max-width: 920px) {
     /* Large desktop-specific styles */
     .skills {
         height: auto;
@@ -340,15 +468,26 @@ footer{
     }
     .profile{
 
-            width: auto;
+    width: calc(100% - 16px);
+
     } 
     .left-flex>.nav-cont>ul.nav-bar  {
         padding-left: 36px;
     }
+    .right-flex {
+        width: calc(90% - 145px);
+        margin-left: 220px;
+        margin-top: 15px;
+    }
 
-  }
+    #preloader{
+        height: 100%;
+        background-size: 30%;
+    }
+}
+
   /* Mobile */
-  @media all and (max-width: 760px) {
+  @media all  and (max-width: 760px) {
     *{
         margin: 0;
         padding: 0;
@@ -356,6 +495,7 @@ footer{
 
 .profile {
     margin-left: 20px;
+    width: calc(100% - 40px);
 }
     .header{
         height: 60px;
@@ -518,14 +658,9 @@ footer{
         padding-left: 20px;
     }
 
-}
+    #preloader{
+        height: 100%;
+        background-size: 50%;
+    }
 
-#preloader{
-    background:  #2a2826 url(./images/loder.gif) no-repeat center center;
-    background-size: 20%;
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    z-index: 3;
 }
-    
