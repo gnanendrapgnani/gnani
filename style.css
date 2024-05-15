@@ -58,7 +58,7 @@ body{
 .left-flex{
     height: 500px;
     max-width: 24%;
-    width: calc(100% -50px);
+    width: calc(100% - 0);
     min-width: 180px;
     background-color: #1c1b23;
     border-radius: 10px;
@@ -492,6 +492,11 @@ textarea {
         margin: 0;
         padding: 0;
     }
+    .flex{
+        width: 100%;
+        display: block;
+        padding-top: 50px;
+    }
 
 .profile {
     margin-left: 20px;
@@ -508,7 +513,7 @@ textarea {
     height: 328px;
     }
     .right-flex{
-        width: auto;
+        width: 123%;
         margin-left: 0;
         padding-left: 0;
     }
@@ -663,4 +668,10 @@ textarea {
         background-size: 50%;
     }
 
+}
+@media all and (max-width: 390px){
+    .flex{
+        display: block;
+        width: 130%;
+    }
 }
