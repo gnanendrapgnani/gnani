@@ -67,15 +67,18 @@ body{
 }
 .right-flex{
 
-width: calc(100% - 150px);
+width: 100%;
 
 margin-left: 220px;
 
 margin-top: 15px;
+
+padding: 0 20px;
+
+
 }
 .profile{
-    background: url(./images/bg4.jpeg) no-repeat;
-    background-size: cover;
+    background: linear-gradient(60deg, rgba(238,175,221,1) 23%, rgba(34,193,195,1) 100%);;
     backdrop-filter: blur(150rem);
     background-position: center;
     height: 114px;
@@ -138,7 +141,7 @@ margin-top: 15px;
     padding-top: 30px;
 }
 .about{
-    width: 97%;
+    width: 100%;
     color: white;
     margin-top: 20px;
 
@@ -273,7 +276,7 @@ margin-top: 15px;
 
 footer{
     height: 70px;
-    width: auto;
+    width: 100%;
     min-width: 450px;
     display: grid;
     place-items: center;
@@ -331,7 +334,6 @@ footer{
 .contactContainer{
     width: 100%;
     /* height: auto; */
-    padding: 0 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -415,26 +417,7 @@ textarea {
 /* Default styles for all devices */
 
   /* Laptop/Desktop */
-  @media all and (min-width: 1024px) and (max-width: 1439px) {
 
-  }
-
-  @media all and (min-width: 1024px) and (max-width: 1439px) {
-    /* Laptop/Desktop-specific styles */
-    .skills {
-        height: auto;
-        width: 100%;
-    }
-
-    .download{
-        height: 50vh;
-    }
-    .right-flex {
-        width: calc(100% - 150px);
-        margin-left: 220px;
-        margin-top: 15px;
-    }
-  }
 
   @media all and  (min-width:920px) and (max-width: 1024px) {
     .right-flex {
@@ -487,7 +470,7 @@ textarea {
 }
 
   /* Mobile */
-  @media all  and (max-width: 760px) {
+  @media (max-width: 760px) {
     *{
         margin: 0;
         padding: 0;
@@ -498,12 +481,14 @@ textarea {
         padding-top: 50px;
     }
 
-.profile {
-    margin-left: 20px;
-    width: calc(100% - 40px);
-}
+    .profile {
+        /* margin-left: 20px; */
+        width: 100%;
+        gap: 10px;
+    }
     .header{
         height: 60px;
+        /* width: calc(89%); */
     }
     .left-flex{
         display: none;
@@ -513,9 +498,9 @@ textarea {
     height: 328px;
     }
     .right-flex{
-        width: 123%;
         margin-left: 0;
         padding-left: 0;
+        padding: 0px 20px;
     }
     /* .profile{
         background: url(./images/Bg.jpeg) no-repeat;
@@ -523,16 +508,12 @@ textarea {
         background-position: center;
     } */
 
-    .ab-con{
-        min-width: 450px;
-    }
+
     .click{
-        min-width: 400px;
         font-size: 18px;
         margin-left: 30px;
     }
     .cop-rigt {
-        min-width: 400px;
         font-size: 1.2rem;
         margin-top: 20px;
         padding: 0 20px;
@@ -601,6 +582,7 @@ textarea {
     footer{
         height: 200px;
         width: 100%;
+        min-width: 0;
     }
     .navContanier{
         display: none;
@@ -659,19 +641,14 @@ textarea {
     .bx{
         font-size: xx-large;
     }
-    .pa{
-        padding-left: 20px;
-    }
 
     #preloader{
         height: 100%;
         background-size: 50%;
     }
+    .pro-img{
+        margin-left: 10px;
 
-}
-@media all and (max-width: 390px){
-    .flex{
-        display: block;
-        width: 130%;
     }
+
 }
