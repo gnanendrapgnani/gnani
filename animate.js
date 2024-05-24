@@ -31,7 +31,13 @@ const observer = new IntersectionObserver((entries)=>{
 const hiddenElements=document.querySelectorAll('.hidden')
 hiddenElements.forEach((el)=>observer.observe(el))
 
-
+document.getElementById('contact-form').onsubmit = function() {
+    setTimeout(function() {
+      document.getElementById('name').value = '';
+      document.getElementById('email').value = '';
+      document.getElementById('message').value = '';
+    }, 500);
+  };
 
 
 
