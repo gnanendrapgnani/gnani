@@ -123,7 +123,7 @@ padding: 0 20px;
     transition:  all 0.3s ease;
 }
 .opt-lk>a>i{
-    font-size: 1.2rem;
+    font-size: 1.6rem;
 }
 
 .Socl{
@@ -247,6 +247,7 @@ padding: 0 20px;
 .heading{
     font-family: "Inter", sans-serif;
     margin: 20px 0px 20px 0px;
+    font-size: 2.2rem;
 }
 .skill-info{
     color: #677586;
@@ -520,7 +521,7 @@ textarea {
 
     .click{
         font-size: 18px;
-        margin-left: 30px;
+        text-align: center;
     }
     .cop-rigt {
         font-size: 1.2rem;
@@ -571,7 +572,8 @@ textarea {
     .navBar{
         display: flex;
         margin-bottom: 10px;
-        height: 45px;   
+        height: 45px;
+        padding: 0;
     }
 
     .opt-lk>a{
@@ -659,5 +661,10 @@ textarea {
         margin-left: 10px;
 
     }
-
+    .name{
+        font-size: 1.5rem;
+    }
+    .role{
+        font-size: 1rem;
+    }
 }
