@@ -71,15 +71,13 @@ body{
 }
 .right-flex{
 
-width: 100%;
+width: calc(100% - 220px);
 
 margin-left: 220px;
 
 margin-top: 15px;
 
 padding: 0 20px;
-
-
 }
 .profile{
     background: linear-gradient(60deg, rgba(238,175,221,1) 23%, rgba(34,193,195,1) 100%);;
@@ -269,6 +267,7 @@ padding: 0 20px;
 }
 .cards{
     z-index: -1;
+    margin: 0 !important;
 }
 .card-body{
     background-color: #1c1b23;
@@ -533,6 +532,7 @@ scrollbar-width: none;
     height: 328px;
     }
     .right-flex{
+        width: 100%;
         margin-left: 0;
         padding-left: 0;
         padding: 0px 20px;
