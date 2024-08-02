@@ -80,7 +80,7 @@ margin-top: 15px;
 padding: 0 20px;
 }
 .profile{
-    background: linear-gradient(60deg, rgba(238,175,221,1) 23%, rgba(34,193,195,1) 100%);;
+    background: linear-gradient(60deg, rgba(238,175,221,1) 23%, rgba(34,193,195,1) 100%);
     backdrop-filter: blur(150rem);
     background-position: center;
     height: 114px;
